@@ -148,14 +148,14 @@ def run_test_even_better_draw_circles():
     print('--------------------------------------------------')
     print('Testing  even_better_draw_circles:  See graphics window')
     print('--------------------------------------------------')
-    even_better_draw_circles(15, 10, 180, 180, 'green', 1)
+    even_better_draw_circles(15, 11, 180, 180, 'green', 1)
 
 
 def even_better_draw_circles(r, n, x, y, color, v):
     window = rg.RoseWindow(400, 400)
 
     center = rg.Point(x, y)
-    for k in range(n + 1):
+    for k in range(n):
         circle = rg.Circle(center, r * k)
         circle.outline_color = color
         circle.attach_to(window)
